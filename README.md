@@ -9,7 +9,7 @@
 
 ---
 
-## 📌 Overview & Problem Statement
+## Overview & Problem Statement
 
 In real-world mobile autonomy, navigation systems face two persistent failure modes when dynamic obstacles appear:
 1. **The Computational Bottleneck of Global Replanning:** In large environments, recalculating full geometric routes (e.g., standard Dijkstra or A\*) every time a moving hazard enters the path is computationally expensive and introduces dangerous latency.
@@ -22,7 +22,7 @@ In real-world mobile autonomy, navigation systems face two persistent failure mo
 
 ---
 
-## 🧠 Core Architecture
+## Core Architecture
 
 ```
                                  [ Destination Goal (x, y) ]
@@ -72,7 +72,7 @@ $$\text{State } s = (B_{\text{front}} \ll 2) \mid (B_{\text{left}} \ll 1) \mid B
 
 ---
 
-## 🎮 Interactive Simulation Environments
+## Interactive Simulation Environments
 
 OmniTrace features **3 dedicated simulation environments** switchable in real-time:
 
@@ -98,7 +98,7 @@ OmniTrace features **3 dedicated simulation environments** switchable in real-ti
 
 ---
 
-## ⚡ Why RL Over Full-Map Graph Replanning ($D^*$ Lite)?
+## Why RL Over Full-Map Graph Replanning ($D^*$ Lite)?
 
 | Feature | Graph Replanning (Dijkstra / $D^*$ Lite) | OmniTrace Hybrid RL |
 | :--- | :--- | :--- |
@@ -109,7 +109,7 @@ OmniTrace features **3 dedicated simulation environments** switchable in real-ti
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Prerequisites & Environment Setup
 Clone the repository and set up a Python virtual environment:
@@ -142,7 +142,7 @@ pytest -v
 
 ---
 
-## ⌨️ Controls Cheat Sheet
+## Controls Cheat Sheet
 
 | Key / Action | Function |
 | :--- | :--- |
@@ -159,7 +159,7 @@ pytest -v
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 OmniTrace/
@@ -188,5 +188,5 @@ OmniTrace/
 
 ---
 
-## 📜 License
+## License
 MIT License. Open-source for academic research, education, and autonomous systems experimentation.
