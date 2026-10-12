@@ -4,7 +4,6 @@
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
 [![Pygame](https://img.shields.io/badge/UI-Pygame%202.6-green.svg)](https://www.pygame.org/)
-[![Tests](https://img.shields.io/badge/Tests-47%20Passed-brightgreen.svg)](tests/)
 [![Architecture](https://img.shields.io/badge/Architecture-Hierarchical%20RL-purple.svg)](#core-architecture)
 
 ---
@@ -133,13 +132,6 @@ pip install -e .
 python -m atlas_robotics.main
 ```
 
-### 3. Run the Automated Test Suite
-OmniTrace comes with a comprehensive test suite covering kinematics, Dijkstra search, LiDAR raymarching, occupancy grids, and RL policy convergence:
-```bash
-pytest -v
-```
-*(47 passing unit tests)*
-
 ---
 
 ## Controls Cheat Sheet
@@ -181,7 +173,6 @@ OmniTrace/
 │       └── learning/
 │           ├── local_rl_policy.py   # 8-state tabular Q-learning reflex policy
 │           └── hybrid_navigator.py  # Hierarchical arbitration coordinator
-├── tests/                           # 47 comprehensive unit tests
 ├── pyproject.toml                   # Project metadata and build configuration
 └── README.md                        # Documentation
 ```
