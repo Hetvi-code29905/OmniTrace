@@ -158,18 +158,18 @@ OmniTrace/
 ├── src/
 │   └── atlas_robotics/
 │       ├── main.py                  # Pygame visualizer, topbar tabs, telemetry HUD
-│       ├── core/
-│       │   ├── grid.py              # 2D GridWorld and obstacle representation
-│       │   └── kinematics.py        # Differential-drive kinematic equations
+│       ├── world.py                 # 2D GridWorld and obstacle representation
+│       ├── robot.py                 # Discrete robot state model
+│       ├── control/
+│       │   └── waypoint_follower.py # Unicycle kinematics and pure pursuit controller
 │       ├── planning/
 │       │   └── dijkstra.py          # Classical Dijkstra global route planner
 │       ├── sensors/
-│       │   ├── lidar.py             # 360-degree 36-ray laser raycaster
-│       │   └── mapping.py           # Probabilistic 2D Occupancy Grid map
+│       │   └── lidar.py             # 360-degree 36-ray laser raycaster
+│       ├── mapping/
+│       │   └── occupancy_grid.py    # Probabilistic 2D Occupancy Grid map
 │       ├── localization/
 │       │   └── odometry.py          # Dead-reckoning estimator with wheel slip noise
-│       ├── control/
-│       │   └── waypoint_follower.py # Continuous unicycle waypoint pursuit controller
 │       └── learning/
 │           ├── local_rl_policy.py   # 8-state tabular Q-learning reflex policy
 │           └── hybrid_navigator.py  # Hierarchical arbitration coordinator
